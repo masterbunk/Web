@@ -15,3 +15,8 @@ steps:
     rootFolderOrFile: '$(build.sourcesDirectory)'
     includeRootFolder: false
 - task: PublishBuildArtifacts@1
+- task: rapid7-insightappsec@1
+  inputs:
+    apiConnection: 'KamonsinIAS'
+    application: '2fca375c-b9fa-4507-8ee6-38645a81a836'
+    hasTimeout: false
